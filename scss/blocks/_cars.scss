@@ -1,0 +1,309 @@
+.cars {
+  height: 600px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+
+  &__tit {
+    width: 26%;
+    & h2 {
+      font-family: sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 140%;
+      /* or 34px */
+
+      text-align: center;
+
+      /* title-color */
+
+      color: #f1f2f3;
+    }
+  }
+  &__cards {
+    height: 60%;
+    width: 75%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    &--card {
+      width: 258px;
+      height: 328px;
+      background: #111213;
+      border-radius: 20px;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      padding: 10px 0 0 25px;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      &:hover{
+        transform: scale(1.1,1.1);
+      }
+      &--tit {
+        width: 50%;
+        & h2 {
+          font-family: sans-serif;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 26px;
+          line-height: 140%;
+          /* identical to box height, or 34px */
+
+          /* title-color */
+
+          color: #f9fcff;
+        }
+        & p {
+          width: 100%;
+          font-family: sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 140%;
+          /* or 22px */
+
+          /* text-color */
+
+          color: #d6d9dd;
+        }
+      }
+      &--shalight {
+        width: 190px;
+        height: 190px;
+        background: rgba(55, 74, 109, 0.5);
+        filter: blur(60px);
+        position: absolute;
+        top: -45px;
+        left: -50px;
+      }
+      &--ab {
+        width: 70%;
+        height: 22%;
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        justify-content: space-between;
+        &--items {
+          width: 40%;
+          display: flex;
+          align-items: center;
+        justify-content: space-around;
+        }
+        &--items img {
+          widows: 14px;
+          height: 12px;
+        }
+        &--items strong {
+          font-family: sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 140%;
+/* or 18px */
+
+
+/* white-color */
+
+color: #FFFFFF;
+        }
+      }
+      &--foot {
+      
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+
+        & button {
+          width: 56px;
+          height: 48px; 
+          background: #4177dc;
+          border-radius: 20px 0px;
+          border: none;
+          transition: all 0.3s ease;
+          &:hover{
+            background:rgba(55, 74, 109, 0.5);
+          }
+          
+        }
+        & p{
+          font-family: sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 140%;
+/* identical to box height, or 28px */
+
+
+/* white-color */
+
+color: #FFFFFF;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 374px) and (max-width:400px){
+  .cars {
+    height: 1150px;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+  
+    &__tit {
+      width: 100%;
+      & h2 {
+        font-family: sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 140%;
+        /* or 34px */
+  
+        text-align: center;
+  
+        /* title-color */
+  
+        color: #f1f2f3;
+      }
+    }
+    &__cards {
+      height: 85%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+     
+     
+      &--card {
+       
+        width: 228px;
+        height: 303px;
+        background: #111213;
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 10px 0 0 25px;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.3s ease;
+        &:hover{
+          transform: scale(1.1,1.1);
+        }
+        &--tit {
+          width: 50%;
+          & h2 {
+            font-family: sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 26px;
+            line-height: 140%;
+            /* identical to box height, or 34px */
+  
+            /* title-color */
+  
+            color: #f9fcff;
+          }
+          & p {
+            width: 100%;
+            font-family: sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 140%;
+            /* or 22px */
+  
+            /* text-color */
+  
+            color: #d6d9dd;
+          }
+        }
+        &--shalight {
+          width: 190px;
+          height: 190px;
+          background: rgba(55, 74, 109, 0.5);
+          filter: blur(60px);
+          position: absolute;
+          top: -45px;
+          left: -50px;
+        }
+        &--ab {
+          width: 70%;
+          height: 22%;
+          display: flex;
+          flex-wrap: wrap;
+          list-style: none;
+          justify-content: space-between;
+          &--items {
+            width: 40%;
+            display: flex;
+            align-items: center;
+          justify-content: space-around;
+          }
+          &--items img {
+            widows: 13px;
+            height: 13px;
+          }
+          &--items strong {
+            font-family: sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 140%;
+  /* or 18px */
+  
+  
+  /* white-color */
+  
+  color: #FFFFFF;
+          }
+        }
+        &--foot {
+        
+          width: 100%;
+          height: 50px;
+          display: flex;
+          justify-content: space-between;
+  
+          & button {
+            width: 52px;
+            height: 44px; 
+            background: #4177dc;
+            border-radius: 20px 0px;
+            border: none;
+            transition: all 0.3s ease;
+            &:hover{
+              background:rgba(55, 74, 109, 0.5);
+            }
+            
+          }
+          & p{
+            font-family: sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+  /* identical to box height, or 28px */
+  
+  
+  /* white-color */
+  
+  color: #FFFFFF;
+          }
+        }
+      }
+    }
+  }
+}

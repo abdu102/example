@@ -1,0 +1,99 @@
+header{
+    height: 70px;
+background-color: #111213;
+    .nav{
+        height: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__icon{
+            display: none;
+           }
+        &__ul{
+            width: 34%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        
+
+            &--list{
+                list-style-type: none;
+
+                &--item{
+                    text-decoration: none;
+                    color: red;
+                    font-size: 16px;
+                    color: #ffff;
+                    font-family: sans-serif;
+                    transition: all 0.3s ease;
+                    &:hover{
+                        color: #4177DC;
+                    }
+               
+                }
+            }
+        }
+
+   
+    }
+}
+@media only screen and (min-width: 374px) and (max-width:400px){
+    
+    // .container{
+    //     max-width: 1440px;
+    //     margin: 0 auto;
+    //    padding: 0px 12px;
+    //    background: #111213;
+    // }
+    header{
+        height: 70px;
+
+        .nav{
+            height: 70px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            
+            &__logo{
+                width: 50%;
+      
+            }
+            
+            &__icon{
+                display: block;
+                color: #ffff;
+                font-size: 24px;
+                transition: all 0.3s ease;
+                &:active{
+                    color: #4177DC;
+                }
+            }
+
+            &__ul{
+                width: 34%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            display: none;
+    
+                &--list{
+                    list-style-type: none;
+    
+                    &--item{
+                        text-decoration: none;
+                        color: red;
+                        font-size: 16px;
+                        color: #ffff;
+                        font-family: sans-serif;
+                        transition: all 0.3s ease;
+                        &:hover{
+                            color: #4177DC;
+                        }
+                    }
+                }
+            }
+    
+        }
+    }
+}
